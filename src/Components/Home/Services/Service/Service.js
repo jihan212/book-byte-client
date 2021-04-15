@@ -26,7 +26,7 @@ const Service = () => {
                 <h5 style={{color: '#3A4256'}} >OUR SERVICES</h5>
                 <h2>Services We Provide</h2>
             </div>
-            <div className="d-flex flex-row justify-content-center">     
+            <div className="row d-flex align-items-center">     
                 {
                     serviceData.map (service => <ServiceDetail service={service} key={service.name}></ServiceDetail>)
                 } 
