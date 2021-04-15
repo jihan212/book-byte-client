@@ -5,15 +5,15 @@ import Blog from '../Blog/Blog';
 const blogData = [
     {
         quote : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi repudiandae voluptatibus dolores enim soluta dignissimos nostrum at facere maiores hic ut, accusantium blanditiis est temporibus debitis omnis voluptates! Dicta commodi aliquam, quam soluta quasi neque quos asperiores porro explicabo ipsum ipsam quisquam distinctio nam facere consectetur officiis necessitatibus praesentium odit.',
-        name : 'Harry Potter'
+        name : 'Luna Lovegood'
     },
     {
         quote : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi repudiandae voluptatibus dolores enim soluta dignissimos nostrum at facere maiores hic ut, accusantium blanditiis est temporibus debitis omnis voluptates! Dicta commodi aliquam, quam soluta quasi neque quos asperiores porro explicabo ipsum ipsam quisquam distinctio nam facere consectetur officiis necessitatibus praesentium odit.',
-        name : 'Hermione Granger'
+        name : 'Draco Malfoy'
     },
     {
         quote : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi repudiandae voluptatibus dolores enim soluta dignissimos nostrum at facere maiores hic ut, accusantium blanditiis est temporibus debitis omnis voluptates! Dicta commodi aliquam, quam soluta quasi neque quos asperiores porro explicabo ipsum ipsam quisquam distinctio nam facere consectetur officiis necessitatibus praesentium odit.',
-        name : 'Ron Weasley'
+        name : 'Ginnie Weasley'
     }
 ]
 
