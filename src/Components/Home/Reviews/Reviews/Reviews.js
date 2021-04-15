@@ -30,7 +30,7 @@ const Reviews = () => {
         <section className="testimonials my-5">
            <div className="container">
                <div className="section-header">
-                   <h5 style={{color: '#eda6be'}} className="text-uppercase">Testimonial</h5>
+                   <h5 style={{color: '#eda6be'}} className="text-uppercase">Reviews</h5>
                    <h1>What Our Customers <br/> Says </h1>
                </div>
                <div className="card-deck mt-5 row d-flex align-items-center">
