@@ -30,7 +30,7 @@ const Navigation = () => {
                         <a style={{fontSize:"1.2vw"}} className="nav-link mr-5" href="/">Blogs</a>
                     </li>
                     <li className="nav-item">
-                        <a style={{fontSize:"1.2vw"}} className="nav-link mr-5" href="/">Contact Us</a>
+                        <a style={{fontSize:"1.2vw"}} className="nav-link mr-5" href="/login">Log In</a>
                     </li>
                 </ul>
             </div>
