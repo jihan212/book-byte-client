@@ -15,22 +15,22 @@ const Navigation = () => {
                         <a className="nav-link mr-5" href="/"> <img style={{height:"30px"}} src={logo} alt=""/> <span className="sr-only"></span></a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link mr-5" href="/">Home</a>
+                        <a style={{fontSize:"1.2vw"}} className="nav-link mr-5" href="/">Home</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link mr-5" href="/">About</a>
+                        <a style={{fontSize:"1.2vw"}} className="nav-link mr-5" href="/">About</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link mr-5" href="/">Services</a>
+                        <a style={{fontSize:"1.2vw"}} className="nav-link mr-5" href="/">Services</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link mr-5" href="/">Reviews</a>
+                        <a style={{fontSize:"1.2vw"}} className="nav-link mr-5" href="/">Reviews</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link mr-5" href="/">Blogs</a>
+                        <a style={{fontSize:"1.2vw"}} className="nav-link mr-5" href="/">Blogs</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link mr-5" href="/">Contact Us</a>
+                        <a style={{fontSize:"1.2vw"}} className="nav-link mr-5" href="/">Contact Us</a>
                     </li>
                 </ul>
             </div>
