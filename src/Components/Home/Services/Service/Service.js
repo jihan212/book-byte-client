@@ -6,15 +6,15 @@ import ServiceDetail from '../ServiceDetail/ServiceDetail';
 
 const serviceData = [
     {
-        name: 'Fluoride Treatment',
+        name: 'Book Selling',
         img: book1
     },
     {
-        name: 'Cavity Filling',
+        name: 'Book Borrowing',
         img: book2
     },
     {
-        name: 'Teeth Whitening',
+        name: 'Book Buying',
         img: book3
     }
 ]
@@ -23,7 +23,7 @@ const Service = () => {
     return (
         <section className="mt-5">
             <div className="text-center">
-                <h5 style={{color: '#3A4256'}} >OUR SERVICES</h5>
+                <h5 style={{color: '#eda6be'}} >OUR SERVICES</h5>
                 <h2>Services We Provide</h2>
             </div>
             <div className="row d-flex align-items-center">     
