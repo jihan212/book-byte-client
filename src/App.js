@@ -3,6 +3,7 @@ import Home from './Components/Home/Home/Home';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from './Components/Login/Login';
 import Dashboard from './Components/Dashboard/Dashboard/Dashboard';
+import Order from './Components/Order/Order';
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
 
           <Route path="/dashboard">
           <Dashboard></Dashboard>
+          </Route>
+
+          <Route path="/order">
+          <Order></Order>
           </Route>
         </Switch>
       </Router>
