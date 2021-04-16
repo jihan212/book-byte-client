@@ -5,6 +5,9 @@ import { useForm } from "react-hook-form";
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendar, faGripHorizontal, faUsers } from '@fortawesome/free-solid-svg-icons';
+
 
 const AddService = () => {
 
@@ -53,8 +56,18 @@ const AddService = () => {
             <Navigation></Navigation>
         <div className="admin">
         <div className="side-div">
-            <h2><Link to="/admin">Manage Services</Link></h2>
-            <h2><Link to="/addService">Add Service</Link></h2>
+            <ul className="list-unstyled">
+                <li>
+                    <Link to="/admin" className="text-white" style={{textDecoration:'none'}}>
+                        <FontAwesomeIcon icon={faGripHorizontal} /> <span><strong>Manage Services</strong></span> 
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/addService" className="text-white" style={{textDecoration:'none'}}>
+                        <FontAwesomeIcon icon={faCalendar} /> <span><strong>Add Service</strong></span> 
+                    </Link>
+                </li>
+            </ul>
         </div>
         <div className="form-div">
         <form className="submitForm" onSubmit={handleSubmit(onSubmit)}>

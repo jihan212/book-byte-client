@@ -21,11 +21,14 @@
 .side-div{
     width:20%;
     height:100vh;
-    background-color:#feeae4;
+    background-image: linear-gradient(40deg, #feeae4,#eda6be);
     display:block;
     margin: 5px;
     padding: 5px;
     color: white;
+}
+.side-div h4 Link{
+    text-decoration:none;
 }
 .form-div{
     width:70%;
