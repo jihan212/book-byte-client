@@ -5,6 +5,7 @@ import Login from './Components/Login/Login';
 import Dashboard from './Components/Dashboard/Dashboard/Dashboard';
 import Order from './Components/Order/Order';
 import Admin from './Components/Admin/Admin/Admin';
+import AddService from './Components/Admin/AddService/AddService';
 
 function App() {
   return (
@@ -30,6 +31,12 @@ function App() {
           <Route path="/admin">
           <Admin></Admin>
           </Route>
+
+          <Route path="/addService">
+          <AddService></AddService>
+          </Route>
+
+
         </Switch>
       </Router>
     </div>
