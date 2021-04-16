@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from './Components/Login/Login';
 import Dashboard from './Components/Dashboard/Dashboard/Dashboard';
 import Order from './Components/Order/Order';
+import Admin from './Components/Admin/Admin/Admin';
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
 
           <Route path="/order">
           <Order></Order>
+          </Route>
+
+          <Route path="/admin">
+          <Admin></Admin>
           </Route>
         </Switch>
       </Router>
