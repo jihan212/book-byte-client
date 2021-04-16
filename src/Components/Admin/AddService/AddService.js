@@ -2,11 +2,9 @@ import React from 'react';
 import Navigation from '../../Common/Navigation/Navigation';
 import './AddService.css';
 import { useForm } from "react-hook-form";
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendar, faGripHorizontal, faUsers } from '@fortawesome/free-solid-svg-icons';
+import Sidebar from '../../Dashboard/Sidebar/Sidebar';
 
 
 const AddService = () => {
@@ -56,18 +54,7 @@ const AddService = () => {
             <Navigation></Navigation>
         <div className="admin">
         <div className="side-div">
-            <ul className="list-unstyled">
-                <li>
-                    <Link to="/admin" className="text-white" style={{textDecoration:'none'}}>
-                        <FontAwesomeIcon icon={faGripHorizontal} /> <span><strong>Manage Services</strong></span> 
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/addService" className="text-white" style={{textDecoration:'none'}}>
-                        <FontAwesomeIcon icon={faCalendar} /> <span><strong>Add Service</strong></span> 
-                    </Link>
-                </li>
-            </ul>
+            <Sidebar></Sidebar>
         </div>
         <div className="form-div">
         <form className="submitForm" onSubmit={handleSubmit(onSubmit)}>

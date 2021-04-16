@@ -10,23 +10,28 @@ const Sidebar = () => {
         <div className="sidebar d-flex flex-column justify-content-between col-md-2 py-5 px-4" style={{height:"100vh"}}>
             <ul className="list-unstyled">
                 <li>
-                    <Link to="/user/orders" className="text-white">
-                        <FontAwesomeIcon icon={faGripHorizontal} /> <span>Orders</span> 
+                    <Link to="/admin" className="text-white" style={{textDecoration:'none'}}>
+                        <FontAwesomeIcon icon={faGripHorizontal} /> <span><strong>Admin</strong></span> 
                     </Link>
                 </li>
                 <li>
-                    <Link to="/user/services" className="text-white">
-                        <FontAwesomeIcon icon={faCalendar} /> <span>Services</span> 
+                    <Link to="/dashboard" className="text-white" style={{textDecoration:'none'}}>
+                        <FontAwesomeIcon icon={faUsers} /> <span><strong>Dashboard</strong></span> 
                     </Link>
                 </li>
                 <li>
-                    <Link to="/user/admin" className="text-white">
-                        <FontAwesomeIcon icon={faUsers} /> <span>Admin</span>
+                    <Link to="/addService" className="text-white" style={{textDecoration:'none'}}>
+                        <FontAwesomeIcon icon={faCalendar} /> <span><strong>Add Service</strong></span> 
                     </Link>
                 </li>
                 <li>
-                    <Link to="/user/review" className="text-white">
-                        <FontAwesomeIcon icon={faFileAlt} /> <span>Reviews</span>
+                    <Link to="/services" className="text-white" style={{textDecoration:'none'}}>
+                        <FontAwesomeIcon icon={faCalendar} /> <span><strong>Services</strong></span> 
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/review" className="text-white" style={{textDecoration:'none'}}>
+                        <FontAwesomeIcon icon={faFileAlt} /> <span><strong>Reviews</strong></span>
                     </Link>
                 </li>
             </ul>
