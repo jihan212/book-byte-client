@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Navigation from '../../Common/Navigation/Navigation'
-import Sidebar from '../Sidebar/Sidebar';
+import Sidebar from '../../Common/Sidebar/Sidebar';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 

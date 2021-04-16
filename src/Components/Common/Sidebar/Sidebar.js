@@ -15,11 +15,6 @@ const Sidebar = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/dashboard" className="text-white" style={{textDecoration:'none'}}>
-                        <FontAwesomeIcon icon={faUsers} /> <span><strong>Dashboard</strong></span> 
-                    </Link>
-                </li>
-                <li>
                     <Link to="/addService" className="text-white" style={{textDecoration:'none'}}>
                         <FontAwesomeIcon icon={faCalendar} /> <span><strong>Add Service</strong></span> 
                     </Link>

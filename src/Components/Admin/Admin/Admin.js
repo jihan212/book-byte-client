@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from '../../Common/Navigation/Navigation';
 import './Admin.css';
-import Sidebar from '../../Dashboard/Sidebar/Sidebar';
+import Sidebar from '../../Common/Sidebar/Sidebar';
 
 
 const Admin = () => {

@@ -4,7 +4,7 @@ import './AddService.css';
 import { useForm } from "react-hook-form";
 import { useState } from 'react';
 import axios from 'axios';
-import Sidebar from '../../Dashboard/Sidebar/Sidebar';
+import Sidebar from '../../Common/Sidebar/Sidebar';
 
 
 const AddService = () => {
