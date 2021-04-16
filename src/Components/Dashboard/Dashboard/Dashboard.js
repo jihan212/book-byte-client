@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Navigation from '../../Common/Navigation/Navigation'
 import Sidebar from '../Sidebar/Sidebar';
 import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
+
 
 const containerStyle = {
     backgroundColor: "#F4FDFB",

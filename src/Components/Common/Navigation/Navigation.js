@@ -27,7 +27,7 @@ const Navigation = () => {
                         <a style={{fontSize:"1.2vw"}} className="nav-link mr-5" href="/">Reviews</a>
                     </li>
                     <li className="nav-item">
-                        <a style={{fontSize:"1.2vw"}} className="nav-link mr-5" href="/">Blogs</a>
+                        <a style={{fontSize:"1.2vw"}} className="nav-link mr-5" href="/admin">Admin</a>
                     </li>
                     <li className="nav-item">
                         <a style={{fontSize:"1.2vw"}} className="nav-link mr-5" href="/login">Log In</a>

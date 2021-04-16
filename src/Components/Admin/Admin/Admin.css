@@ -5,7 +5,7 @@
 .submitForm{
     width:75%;
     border-radius:10px;
-    border:1px solid yellowgreen;
+    border:1px solid #feeae4;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -20,8 +20,8 @@
 }
 .side-div{
     width:20%;
-    height:500px;
-    background-color:yellowgreen;
+    height:100vh;
+    background-color:#feeae4;
     display:block;
     margin: 5px;
     padding: 5px;

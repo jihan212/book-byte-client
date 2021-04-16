@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Sidebar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCog, faSignOutAlt, faCalendar, faGripHorizontal, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faCalendar, faGripHorizontal, faUsers } from '@fortawesome/free-solid-svg-icons';
 import {  faFileAlt } from '@fortawesome/free-regular-svg-icons';
 
 const Sidebar = () => {
@@ -30,9 +30,6 @@ const Sidebar = () => {
                     </Link>
                 </li>
             </ul>
-            <div>
-                <Link to="/" className="text-white"><FontAwesomeIcon icon={faSignOutAlt} /> <span>Logout</span></Link>
-            </div>
         </div>
     );
 };
