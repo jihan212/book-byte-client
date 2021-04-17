@@ -15,11 +15,6 @@ const Sidebar = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/addService" className="text-white" style={{textDecoration:'none'}}>
-                        <FontAwesomeIcon icon={faCalendar} /> <span><strong>Add Service</strong></span> 
-                    </Link>
-                </li>
-                <li>
                     <Link to="/services" className="text-white" style={{textDecoration:'none'}}>
                         <FontAwesomeIcon icon={faCalendar} /> <span><strong>Services</strong></span> 
                     </Link>
@@ -27,6 +22,16 @@ const Sidebar = () => {
                 <li>
                     <Link to="/review" className="text-white" style={{textDecoration:'none'}}>
                         <FontAwesomeIcon icon={faFileAlt} /> <span><strong>Reviews</strong></span>
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/addService" className="text-white" style={{textDecoration:'none'}}>
+                        <FontAwesomeIcon icon={faCalendar} /> <span><strong>Add a Service</strong></span> 
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/addReview" className="text-white" style={{textDecoration:'none'}}>
+                        <FontAwesomeIcon icon={faFileAlt} /> <span><strong>Add a Review</strong></span> 
                     </Link>
                 </li>
             </ul>
