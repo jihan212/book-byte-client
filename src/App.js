@@ -5,6 +5,7 @@ import Login from './Components/Login/Login';
 import Order from './Components/Order/Order';
 import Admin from './Components/Admin/Admin/Admin';
 import AddService from './Components/Admin/AddService/AddService';
+import AddReview from './Components/Admin/AddReview/AddReview';
 
 function App() {
   return (
@@ -29,6 +30,10 @@ function App() {
 
           <Route path="/addService">
           <AddService></AddService>
+          </Route>
+
+          <Route path="/addReview">
+          <AddReview></AddReview>
           </Route>
 
 
