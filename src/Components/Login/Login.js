@@ -1,18 +1,43 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Navigation from '../Common/Navigation/Navigation';
 import './Login.css';
 import { FaGoogle} from 'react-icons/fa';
+import firebase from "firebase/app";
+import "firebase/auth";
+import firebaseConfig from './firebase.config';
+import { UserContext } from '../../App';
 
-// onClick={handleGoogleLogin}
+if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+    }
 
 const Login = () => {
+
+    const [ loggedInUser, setLoggedInUser] = useContext(UserContext);
+
+    const handleGoogleLogin = () => {
+        var provider = new firebase.auth.GoogleAuthProvider();
+        firebase.auth()
+            .signInWithPopup(provider)
+            .then((result) => {
+                const {displayName, email} = result.user;
+                const signedInUser = {name: displayName, email};
+                setLoggedInUser(signedInUser);
+            })
+            .catch((error) => {
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                var email = error.email;
+            });
+    }
+
     return (
         <div>
             <Navigation></Navigation>
             
             <div className="login">
                 <h1> Login With Google</h1>
-                <button variant="outline-dark"> <FaGoogle /> Continue With Google  </button>
+                <button onClick={handleGoogleLogin} variant="outline-dark"> <FaGoogle /> Continue With Google  </button>
             </div>
 
         </div>

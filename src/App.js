@@ -6,10 +6,17 @@ import Order from './Components/Order/Order';
 import Admin from './Components/Admin/Admin/Admin';
 import AddService from './Components/Admin/AddService/AddService';
 import AddReview from './Components/Admin/AddReview/AddReview';
+import { createContext, useState } from 'react';
+
+export const UserContext = createContext();
 
 function App() {
+
+  const [ loggedInUser, setLoggedInUser ] = useState({});
+
   return (
-    <div className="App">
+    <div className="App Container">
+      <UserContext.Provider value ={[ loggedInUser, setLoggedInUser]} >
       <Router>
         <Switch>
           <Route exact path="/">
@@ -39,6 +46,7 @@ function App() {
 
         </Switch>
       </Router>
+      </UserContext.Provider>
     </div>
   );
 }
