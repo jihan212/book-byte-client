@@ -7,6 +7,7 @@ import Admin from './Components/Admin/Admin/Admin';
 import AddService from './Components/Admin/AddService/AddService';
 import AddReview from './Components/Admin/AddReview/AddReview';
 import { createContext, useState } from 'react';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
 export const UserContext = createContext();
 
@@ -31,9 +32,9 @@ function App() {
           <Order></Order>
           </Route>
 
-          <Route path="/admin">
+          <PrivateRoute path="/admin">
           <Admin></Admin>
-          </Route>
+          </PrivateRoute>
 
           <Route path="/addService">
           <AddService></AddService>
