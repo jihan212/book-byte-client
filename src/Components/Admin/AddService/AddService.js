@@ -19,7 +19,7 @@ const AddService = () => {
             description: data.value_description,
             imageURL : imageURL
         }
-        const url = `http://localhost:4000/admin`;
+        const url = `https://ancient-cliffs-45282.herokuapp.com/admin`;
     
         fetch(url,{
             method: 'POST',

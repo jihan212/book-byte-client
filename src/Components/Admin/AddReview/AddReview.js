@@ -21,7 +21,7 @@ const AddReview = () => {
             description: data.value_description,
             imageURL : imageURL
         }
-        const url = `http://localhost:4000/addReview`;
+        const url = `https://ancient-cliffs-45282.herokuapp.com/addReview`;
     
         fetch(url,{
             method: 'POST',
