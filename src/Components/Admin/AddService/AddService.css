@@ -5,7 +5,7 @@
 .submitForm{
     width:75%;
     border-radius:10px;
-    border:1px solid #feeae4;
+    border: 2px solid #feeae4;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -13,10 +13,11 @@
 }
 .submitForm input{
     width:90%;
-    height:30px;
+    height: 25px;
     margin: 5px;
     border:1px solid black;
     border-radius: 10px;
+    background-color: #feeae4 ;
 }
 .side-div{
     width:20%;

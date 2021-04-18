@@ -10,13 +10,13 @@ import Sidebar from '../../Common/Sidebar/Sidebar';
 const AddService = () => {
 
     const [imageURL,setImageURL] = useState();
-    const { handleSubmit } = useForm();
+    const { register, handleSubmit } = useForm();
 
     const onSubmit = data => {
         console.log(data);
-        const productData = {
-            name: data.name,
-            description: data.description,
+        const serviceData = {
+            name: data.value_name,
+            description: data.value_description,
             imageURL : imageURL
         }
         const url = `http://localhost:4000/admin`;
@@ -26,7 +26,7 @@ const AddService = () => {
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify(productData)
+            body: JSON.stringify(serviceData)
         })
         .then (response => console.log( 'Server side response', response) )
     };
@@ -59,11 +59,11 @@ const AddService = () => {
         <div className="form-div">
         <form className="submitForm" onSubmit={handleSubmit(onSubmit)}>
             <h3>Input Services Information</h3>
-        <input name="name" defaultValue="Service Name" />
+        <input name="name" defaultValue="Service Name" {...register('value_name')} />
         <br/>
-        <input name="description" defaultValue="Description" />
+        <input style={{height:"90px"}} name="description" defaultValue="Service Description" {...register('value_description')} />
         <br/>
-        <input name="exampleRequired" type="file" onChange={handleImageUpload} />
+        <input name="image" type="file" onChange={handleImageUpload} />
         <br/>
         <input type="submit" />
         </form>

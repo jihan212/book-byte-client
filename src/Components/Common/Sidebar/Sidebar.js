@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Sidebar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendar, faGripHorizontal, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faCalendar, faGripHorizontal } from '@fortawesome/free-solid-svg-icons';
 import {  faFileAlt } from '@fortawesome/free-regular-svg-icons';
 
 const Sidebar = () => {
