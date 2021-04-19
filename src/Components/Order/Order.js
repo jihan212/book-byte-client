@@ -49,7 +49,7 @@ const Order = () => {
                         <th scope="row">1</th>
                         <td>{service.name}</td>
                         <td></td>
-                        <td>${service.price}</td>
+                        <td>${service.fee}</td>
                     </tr>
                 </tbody>
                 </table>

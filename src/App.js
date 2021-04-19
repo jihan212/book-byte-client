@@ -8,6 +8,7 @@ import AddService from './Components/Admin/AddService/AddService';
 import AddReview from './Components/Admin/AddReview/AddReview';
 import { createContext, useState } from 'react';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import CustomersOrders from './Components/CustomersOrders/CustomersOrders';
 
 export const UserContext = createContext();
 
@@ -28,9 +29,9 @@ function App() {
           <Login></Login>
           </Route>
 
-          <Route path="/order">
+          <PrivateRoute exact path="/order/:id">
           <Order></Order>
-          </Route>
+          </PrivateRoute>
 
           <PrivateRoute path="/admin">
           <Admin></Admin>
@@ -42,6 +43,10 @@ function App() {
 
           <Route path="/addReview">
           <AddReview></AddReview>
+          </Route>
+
+          <Route path="/customersOrders">
+          <CustomersOrders></CustomersOrders>
           </Route>
 
 

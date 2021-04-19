@@ -10,12 +10,12 @@ const CustomerSidebar = () => {
         <div className="sidebar d-flex flex-column justify-content-between col-md-2 py-5 px-4" style={{height:"100vh"}}>
             <ul className="list-unstyled">
                 <li>
-                    <Link to="/order" className="text-white" style={{textDecoration:'none'}}>
+                    <Link to={"/order/:id"} className="text-white" style={{textDecoration:'none'}}>
                         <FontAwesomeIcon icon={faGripHorizontal} /> <span><strong>Order The Service</strong></span> 
                     </Link>
                 </li>
                 <li>
-                    <Link to="/orders" className="text-white" style={{textDecoration:'none'}}>
+                    <Link to="/customersOrders" className="text-white" style={{textDecoration:'none'}}>
                         <FontAwesomeIcon icon={faCalendar} /> <span><strong> Your Orders </strong></span> 
                     </Link>
                 </li>
