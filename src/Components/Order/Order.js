@@ -16,6 +16,19 @@ const Order = () => {
         .then (data => setService(data))
     },[id])
 
+    const handleOrder = () => {
+        const newOrder = {...loggedInUser , ...service};
+        fetch('https://ancient-cliffs-45282.herokuapp.com/addOrder', {
+        method : 'POST',
+        headers : { 'content-type': 'application/json' },
+        body : JSON.stringify(newOrder)
+      })
+      .then (res => res.json())
+      .then (data => {
+        console.log(data);
+      })
+    }
+
     return (
         <div>
             <Navigation></Navigation>
@@ -36,11 +49,12 @@ const Order = () => {
                         <th scope="row">1</th>
                         <td>{service.name}</td>
                         <td></td>
-                        <td>$250</td>
+                        <td>${service.price}</td>
                     </tr>
                 </tbody>
                 </table>
             </div>
+            <button onClick={handleOrder} className="btn btn-secondary">Order Service</button>
         </div>
     );
 };

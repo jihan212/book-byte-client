@@ -16,6 +16,7 @@ const AddService = () => {
         console.log(data);
         const serviceData = {
             name: data.value_name,
+            fee: data.value_fee,
             description: data.value_description,
             imageURL : imageURL
         }
@@ -60,6 +61,8 @@ const AddService = () => {
         <form className="submitForm" onSubmit={handleSubmit(onSubmit)}>
             <h3>Input Services Information</h3>
         <input name="name" defaultValue="Service Name" {...register('value_name')} />
+        <br/>
+        <input name="fee" defaultValue="Service Fee" {...register('value_fee')} />
         <br/>
         <input style={{height:"90px"}} name="description" defaultValue="Service Description" {...register('value_description')} />
         <br/>
