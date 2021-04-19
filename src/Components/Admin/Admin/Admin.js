@@ -19,7 +19,7 @@ const Admin = () => {
         <div>
             <Navigation></Navigation>
             <Sidebar></Sidebar>
-            <div>
+            <div className="allOrders">
                 <h2>All Orders of This Library</h2>
                 {
                 allOrders.map(allOrders => <li> { allOrders.name} ordered by  {allOrders.email}</li>)

@@ -9,6 +9,7 @@ import AddReview from './Components/Admin/AddReview/AddReview';
 import { createContext, useState } from 'react';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import CustomersOrders from './Components/CustomersOrders/CustomersOrders';
+import AllService from './Components/Admin/Allservice/AllService';
 
 export const UserContext = createContext();
 
@@ -49,6 +50,9 @@ function App() {
           <CustomersOrders></CustomersOrders>
           </Route>
 
+          <Route path="/services">
+          <AllService></AllService>
+          </Route>
 
         </Switch>
       </Router>

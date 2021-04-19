@@ -20,18 +20,8 @@ const Sidebar = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/review" className="text-white" style={{textDecoration:'none'}}>
-                        <FontAwesomeIcon icon={faFileAlt} /> <span><strong>Reviews</strong></span>
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/allOrder" className="text-white" style={{textDecoration:'none'}}>
-                        <FontAwesomeIcon icon={faFileAlt} /> <span><strong>Orders</strong></span> 
-                    </Link>
-                </li>
-                <li>
                     <Link to="/addService" className="text-white" style={{textDecoration:'none'}}>
-                        <FontAwesomeIcon icon={faCalendar} /> <span><strong>Add a Service</strong></span> 
+                        <FontAwesomeIcon icon={faFileAlt} /> <span><strong>Add a Service</strong></span> 
                     </Link>
                 </li>
             </ul>
