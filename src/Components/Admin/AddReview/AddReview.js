@@ -4,7 +4,7 @@ import './AddReview.css';
 import { useForm } from "react-hook-form";
 import { useState } from 'react';
 import axios from 'axios';
-import Sidebar from '../../Common/Sidebar/Sidebar';
+import CustomerSidebar from '../../Common/CustomerSidebar/CustomerSidebar';
 
 
 const AddReview = () => {
@@ -56,7 +56,7 @@ const AddReview = () => {
             <Navigation></Navigation>
         <div className="admin">
         <div className="side-div">
-            <Sidebar></Sidebar>
+            <CustomerSidebar></CustomerSidebar>
         </div>
         <div className="form-div">
         <form className="submitForm" onSubmit={handleSubmit(onSubmit)}>

@@ -16,12 +16,12 @@ const CustomerSidebar = () => {
                 </li>
                 <li>
                     <Link to="/orders" className="text-white" style={{textDecoration:'none'}}>
-                        <FontAwesomeIcon icon={faCalendar} /> <span><strong>All Orders</strong></span> 
+                        <FontAwesomeIcon icon={faCalendar} /> <span><strong> Your Orders </strong></span> 
                     </Link>
                 </li>
                 <li>
-                    <Link to="/review" className="text-white" style={{textDecoration:'none'}}>
-                        <FontAwesomeIcon icon={faFileAlt} /> <span><strong>Reviews</strong></span>
+                    <Link to="/addReview" className="text-white" style={{textDecoration:'none'}}>
+                        <FontAwesomeIcon icon={faFileAlt} /> <span><strong>Add a Review</strong></span>
                     </Link>
                 </li>
             </ul>

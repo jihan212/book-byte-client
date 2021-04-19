@@ -25,13 +25,13 @@ const Sidebar = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/addService" className="text-white" style={{textDecoration:'none'}}>
-                        <FontAwesomeIcon icon={faCalendar} /> <span><strong>Add a Service</strong></span> 
+                    <Link to="/allOrder" className="text-white" style={{textDecoration:'none'}}>
+                        <FontAwesomeIcon icon={faFileAlt} /> <span><strong>Orders</strong></span> 
                     </Link>
                 </li>
                 <li>
-                    <Link to="/addReview" className="text-white" style={{textDecoration:'none'}}>
-                        <FontAwesomeIcon icon={faFileAlt} /> <span><strong>Add a Review</strong></span> 
+                    <Link to="/addService" className="text-white" style={{textDecoration:'none'}}>
+                        <FontAwesomeIcon icon={faCalendar} /> <span><strong>Add a Service</strong></span> 
                     </Link>
                 </li>
             </ul>
